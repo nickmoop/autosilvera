@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href='{% static "website/css/styles.css" %}'>
+</head>
+
+<style>
+body {
+  background-image: url('{% static "website/images/background_2.jpg" %}');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+
+<body>
+
+<div class="top_footer">
+    <img src='{% static "website/images/top_footer.png" %}'>
+</div>
+
+<div class="content_body">
+    <h1>Автозапчасти на любые ведра! Постоянным клиентам накидки!</h1>
+    <h1>Заходи не бойся, уходи не плачь!</h1>
+    <p>Вот такое мы продаем.</p>
+
+    <div class="w3-content w3-section">
+        <img class="mySlides w3-animate-fading" src='{% static "website/images/part_001.jpg" %}'>
+        <img class="mySlides w3-animate-fading" src='{% static "website/images/part_002.jpg" %}'>
+        <img class="mySlides w3-animate-fading" src='{% static "website/images/part_003.jpg" %}'>
+        <img class="mySlides w3-animate-fading" src='{% static "website/images/part_004.jpg" %}'>
+    </div>
+
+    <p>Тут написано какие правила купли, продажи</p>
+    <p>Как происходит доставка</p>
+    <p>Всякое прочее гавно</p>
+    <p>Всякое прочее гавно</p>
+    <p>Всякое прочее гавно</p>
+    <p>Всякое прочее гавно</p>
+    <p>Всякое прочее гавно</p>
+    <p>Всякое прочее гавно</p>
+
+</div>
+
+<div class="contacts">
+    <h1>Это не хуйня, а красивая,</h1>
+    <h1> стильная картинка-визитка</h1>
+    <h1>Контакты:</h1>
+    <p>телефон: +79123456789</p>
+    <p>вацап: тут_вацап_контакт</p>
+    <p>вибер: тут_вибер_контакт</p>
+</div>
+
+</body>
+</html>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "inline-block";
+  setTimeout(carousel, 9000);
+}
+</script>

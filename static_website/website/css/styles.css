@@ -1,0 +1,17 @@
+.top_footer {
+    text-align: center;
+}
+
+.content_body {
+    text-align: center;
+}
+
+.contacts {
+    position: fixed;
+    bottom: 0;
+}
+
+.mySlides {
+    height: 400px;
+    width: 400px;
+}
