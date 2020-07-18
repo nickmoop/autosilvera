@@ -6,16 +6,11 @@
     <link rel="stylesheet" href='{% static "website/css/styles.css" %}'>
 </head>
 
-<style>
-body {
-  background-image: url('{% static "website/images/background_2.jpg" %}');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
-</style>
-
 <body>
+
+<div class="background_image">
+    <img src='{% static "website/images/background_2.jpg" %}'>
+</div>
 
 <div class="top_footer">
     <img src='{% static "website/images/top_footer.png" %}'>
@@ -41,7 +36,6 @@ body {
     <p>Всякое прочее гавно</p>
     <p>Всякое прочее гавно</p>
     <p>Всякое прочее гавно</p>
-
 </div>
 
 <div class="contacts">
